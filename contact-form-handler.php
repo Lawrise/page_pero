@@ -1,9 +1,9 @@
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = "tristan";
+    $visitor_email = "boisne.jembe@icloud.com";
+    $message = "test";
 
-    $email_form = "jembe20boisne@gmail.com";
+    $email_from = "jembe20boisne@gmail.com";
 
     $email_subject = "New form Submission";
 
