@@ -907,6 +907,27 @@ section {
   }
 }
 
+.contact_test .corp  {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.contact_test .corp .boite {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_test .corp .gauche .groupe input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 15px;
+  outline-color: #149ddd;
+}
+
+.contact_test .corp .droite {
+  margin-left: 40px;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
