@@ -1,24 +1,19 @@
 <?php
-    $name = "tristan";
-    $visitor_email = "boisne.jembe@icloud.com";
-    $message = "test";
-
-    $email_from = "jembe20boisne@gmail.com";
-
-    $email_subject = "New form Submission";
-
-    $email_body = "user name : $name.\n".
-                    "user email : $visitor_email.\n". 
-                        "user message : $message.\n";
+    $visitor_email = $_POST['email'];
+    $email_subject = $_POST['subject'];
+    $message = $_POST['message'];
     
+
     $to = "jembe20boisne@gmail.com";
 
-    $headers = "From: $email_form \r\n";
+    $headers = "Content-Type: text/plain; charset=utf-8\r\n";
+    $headers = "From: $visitor_email\r\n";
 
-    $headers .= "Reply-to : $visitor_email \r\n";
+    if (mail($to, $email_subject, $message, $headers))
+        echo"envoye !";
+    else 
+        echo"erreur";
 
-    mail($to, $email_subject, $email_body, $headers);
-
-    header("Location: index.html");
-
+    
+    
 ?>
